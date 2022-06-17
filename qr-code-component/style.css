@@ -12,8 +12,7 @@ body {
 section {
     background-color: white;
     border-radius: 5%;
-    width: 13%;
-    height: 510px;
+    width: 15%;
 
     position: fixed;
     top: 50%;
@@ -23,7 +22,7 @@ section {
 
 section img {
     border-radius: 6%;
-    height: 300px;
+    width: 90%;
     margin-left: 5%;
     margin-top: 4%;
 }
@@ -37,7 +36,48 @@ section h3 {
 section p {
     text-align: center;
     width: 70%;
-    margin: 2% 13%;
-    font-size: 15px;
+    margin: 5% 13%;
+    font-size: 1rem;
     color: hsl(220, 15%, 55%);
 }
+
+
+@media screen and (max-width: 1440px)  {
+
+    section {
+        width: 20%;
+    }
+
+    section h3 {
+        width: 75%;
+        margin: 7% 12%;
+    }
+
+    section p {
+        width: 85%;
+        margin: 8% 6%;
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    section {
+        width: 30%; 
+    }
+        
+    section h3 {
+        width: 90%;
+        margin: 5% 5%;
+    }
+}    
+
+@media screen and (max-width: 768px) {
+
+    section {
+        width: 35%;
+    }
+}
+
+
+
