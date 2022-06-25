@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.overall-container {
+    display: flex;
+}
+
+.left-container {
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    width: 50%;  
+}
+
+.left-box h1 {
+    color: white;
+    line-height: 1;
+    font-size: 60px;
+
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.left-box p {
+    color: white;
+    line-height: 1.5;
+    font-size: 17px;
+
+    width: 40%;
+}
+
+.right-container {
+    position: absolute;
+    top: 25%;
+    left: 52%;
+}
+
+.top-right-purple-box {
+    border-radius: 5px;
+    background: hsl(247, 32%, 48%);
+
+    text-align: center;
+    color: white; 
+    font-size: 15px;   
+    height: 4vh;
+    width: 158%;
+}
+
+.overall-try {
+    display: inline-block;
+    margin-top: 2.5%;
+}
+
+.bold-try {
+    font-weight: 600;
+}
+
+.bottom-right-white-box {
+    margin-top: 3%;
+    border-radius: 3%;
+    background: white;
+    height: 37vh;
+    width: 158%;
+}
+
+#fname {
+    margin-top: 8%;
+}
+
+input{
+    width: 85%;
+    height: 4vh;
+    margin-left: 7%;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+button {
+    width: 85%;
+    height: 4vh;
+    margin-left: 7%;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(153, 59%, 51%);
+
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+input::placeholder {
+   font-weight: 600;
+   padding-left: 30px;
+}
+
+.terms-and-services {
+    font-size:10px;
+    color: gray;
+    margin-top: 3%;
+    margin-left: 19%;
+}
+
+.services {
+    color: red;
+}
+
+
+
