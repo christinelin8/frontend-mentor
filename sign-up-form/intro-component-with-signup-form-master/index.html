@@ -38,13 +38,13 @@
     </div>
 
     <div class="bottom-right-white-box">
-      <form action="general-info-form">
-        <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
-        <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
-        <input type="email" id="email" name="email" placeholder="Email Address"><br><br>
-        <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
+      <form action ="" class="general-info-form">
+        <input type="text" id="fname" name="fname" placeholder="First Name"><span class= "spanError" id="fnameError"></span><br><br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"><span class= "spanError" id="lnameError"></span><br><br>
+        <input type="email" id="email" name="email" placeholder="Email Address"><span class= "spanError" id="emailError"></span><br><br>
+        <input type="password" id="pwd" name="pwd" placeholder="Password"><span class= "spanError" id="passwordError"></span><br><br>
 
-        <button type="button">CLAIM YOUR FREE TRIAL</button>
+       <input type="submit" class="claim-button" value ="CLAIM YOUR FREE TRIAL"/>
       </form>
 
     <div class="terms-and-services">
@@ -63,6 +63,6 @@
     </p>
   </footer>
 
-  <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
