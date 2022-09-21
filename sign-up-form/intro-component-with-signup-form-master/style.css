@@ -11,10 +11,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.overall-container {
-    display: flex;
-}
-
 .left-container {
     position: absolute;
     top: 40%;
@@ -124,6 +120,10 @@ input::placeholder {
 .services {
     color: red;
 }
+
+
+/* media queries below */
+
 
 
 

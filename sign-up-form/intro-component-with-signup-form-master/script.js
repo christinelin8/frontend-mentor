@@ -2,7 +2,7 @@ const generalInfoForm = document.querySelector(".general-info-form")
 const firstName = document.querySelector('#fname');
 const lastName = document.querySelector('#lname');
 const email = document.querySelector('#email');
-const password = document.querySelector('#pwd')
+const password = document.querySelector('#password')
 
 generalInfoForm.addEventListener("submit", emptyForm);
 
@@ -52,14 +52,22 @@ function emptyForm(e) {
     return submit;
 }
 
-function removeErrorMessage() {
+function removeErrors() {
     document.getElementById(this.id + "Error").innerHTML = "";
+    document.getElementById(this.id).style.border = "1px solid lightgray";
 }
 
-document.getElementById("fname").onkeyup = removeErrorMessage;
-document.getElementById("lname").onkeyup = removeErrorMessage;
-document.getElementById("email").onkeyup = removeErrorMessage;
-document.getElementById("pwd").onkeyup = removeErrorMessage;
+function removeRedBorder() {
+    
+}
+
+document.getElementById("fname").onkeyup = removeErrors;
+document.getElementById("lname").onkeyup = removeErrors;
+document.getElementById("email").onkeyup = removeErrors;
+document.getElementById("password").onkeyup = removeErrors;
+
+
+
 
 
 //PASSWORD ERROR MESSAGE IS STILL THERE BECAUSE PWD AND PASSWORDERROR
