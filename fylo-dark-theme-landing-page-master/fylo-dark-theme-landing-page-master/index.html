@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://kit.fontawesome.com/623a8ddfdf.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css"> 
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -17,22 +20,24 @@
 <body>
 
 <!-- NAV SECTION -->
-<nav class="fylo-nav">
-  <img src="images/logo.svg" alt="fylo icon">
-  <ul class="navigation">
-    <li>Features</li>
-    <li>Team</li>
-    <li>Sign In</li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <img class="fylo-logo" src="images/logo.svg" alt="fylo icon">
+    <ul class="navigation">
+      <li class="nav-links"><a href="#">Features</a></li>
+      <li class="nav-links"><a href="#">Team</a></li>
+      <li class="nav-links"><a href="#">Sign In</a></li>
+    </ul>
+  </nav>
 <!-- NAV SECTION -->
 
 <!-- MAIN SECTION -->
 <section class="main-section">
-  <img src="images/illustration-intro.png" alt="">
-  <h1>All your files in one secure location, accessible anywhere.</h1>
-  <p>Fylo stores all your most important files in one secure location. Access them whenever you need, share and collaborate with friends, family, and co-workers.</p>
-  <button class="get-started">Get Started</button>
+  <section>
+    <img src="images/illustration-intro.png" alt="">
+    <h1>All your files in one secure location, accessible anywhere.</h1>
+    <p>Fylo stores all your most important files in one secure location. Access them whenever you need, share and collaborate with friends, family, and co-workers.</p>
+    <button class="get-started">Get Started</button>
+  </section>
 </section>
 <!-- MAIN SECTION -->
 
@@ -45,15 +50,15 @@
   </section>
 
   <section class="services">
-    <img src="images/icon-collaboration.svg" alt="real time collaboration">
-    <h2>Real-time collaboration</h2>
-    <p>Security share files and folders with friends, family, and collegues for live collaboration. No email attachments required.</p>
-  </section>
-
-  <section class="services">
     <img src="images/icon-security.svg" alt="trustable security">
     <h2>Security you can trust</h2>
     <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+  </section>
+
+  <section class="services">
+    <img src="images/icon-collaboration.svg" alt="real time collaboration">
+    <h2>Real-time collaboration</h2>
+    <p>Security share files and folders with friends, family, and collegues for live collaboration. No email attachments required.</p>
   </section>
 
   <section class="services">
@@ -66,89 +71,113 @@
 
 <!-- PRODUCTIVE SECTION -->
   <section class="productive">
-    <h2>Stay productive, wherever you are</h2>
-    <p>Never let location be an issue when accessing your files. Fylo has you covered for all your file storage needs.</p>
-    <p>Securely share files and folders with friends, family, and collegues for live collaboration. No email attachments required.</p>
-    <a href="#">See how Fylo works</a>
+    <img src="images/illustration-stay-productive.png" alt="group productivity">
+    <section class="productive-words">
+      <h2>Stay productive, wherever you are</h2>
+      <p>Never let location be an issue when accessing your files. Fylo has you covered for all your file storage needs.</p>
+      <p>Securely share files and folders with friends, family, and collegues for live collaboration. No email attachments required.</p>
+      <a href="#">See how Fylo works</a>
+    </section>
   </section>
   <!-- PRODUCTIVE SECTION -->
 
   <!-- TESTIMONIALS SECTION -->
   <section class="testimonials-list">
+    <section class="testimonials"> 
+      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch, our team has become a well-oiled collaboration machine.</p>
+      <section class="profiles">
+        <img src="images/profile-1.jpg" alt="Satish">
+        <section>
+          <h3>Satish Patel</h3>
+          <span>Founder & CEO, Huddle</span>
+        </section>
+      </section>
+    </section>
+
     <section class="testimonials">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch, our team has become a well-oiled collaboration machine.</p>
-      <img src="images/profile-1.jpg" alt="Satish">
-      <h3>Satish Patel</h3>
-      <span>Founder & CEO, Huddle</span>
+      <section class="profiles">
+        <img src="images/profile-2.jpg" alt="Bruce">
+        <section>
+          <h3>Bruce McKenzie</h3>
+          <span>Founder & CEO, Huddle</span>
+        </section>
+      </section>
     </section>
 
     <section class="testimonials">
-      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch, our team has become a well-oiled collaboration machine</p>
-      <img src="images/profile-2.jpg" alt="Bruce">
-      <h3>Bruce McKenzie</h3>
-      <span>Founder & CEO, Huddle</span>
+      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch, our team has become a well-oiled collaboration machine.</p>
+      <section class="profiles">
+        <img src="images/profile-3.jpg" alt="Iva">
+        <section>
+          <h3>Iva Boyd</h3>
+          <span>Founder & CEO, Huddle</span>
+        </section>
+      </section>
     </section>
 
-    <section class="testimonials">
-      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch, our team has become a well-oiled collaboration machine></p>
-      <img src="images/profile-3.jpg" alt="Iva">
-      <h3>Iva Boyd</h3>
-      <span>Founder & CEO, Huddle</span>
-    </section>
+    <img class= "flipped" src="images/bg-quotes.png" alt="">
   </section>
   <!-- TESTIMONIALS SECTION -->
 
   <!-- EARLY ACCESS SECTION -->
   <section class="early-access">
-    <h2>Get early access today</h2>
-    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-    <input type="email" placeholder="email@example.com">
-    <button class="get-started">Get Started For Free</button>
+    <section>
+      <h2>Get early access today</h2>
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        <section class="early-email">
+          <input type="email" placeholder="email@example.com">
+          <button class="get-started-free">Get Started For Free</button>
+      </section>
+    </section>
   </section>
   <!-- EARLY ACCESS SECTION -->
 
   <!-- FOOTER -->
   <footer>
-    <section class="about-us-footer">
+    <section class="about-us-footer footer1">
       <img src="images/logo.svg" alt="footer-logo">
-      <p><img src="images/icon-location.svg" alt="pinpoint">Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <section>
+        <img src="images/icon-location.svg" alt="pinpoint">
+        <p>Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </section>
     </section>
 
-    <section class="about-us-footer">
+    <section class="about-us-footer footer2">
       <span><img src="images/icon-phone.svg" alt="phone">+1-543-123-4567</span>
       <span><img src="images/icon-email.svg" alt="email">example@fylo.com</span>  
     </section>
 
-    <section class="about-us-footer">
-      <section class="left-side">
+    <section class="about-us-footer footer3">
+      <section class="footer-links">
         <ul>
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
       </section>
 
-      <section class="right-side">
+      <section class="footer-links">
         <ul>
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
         </ul>
       </section>
     </section>
 
-    <section class="about-us-footer">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>  
+    <section class="about-us-footer footer4">
+      <i class="fa-brands fa-facebook fa-2x"></i>
+      <i class="fa-brands fa-twitter fa-2x"></i>
+      <i class="fa-brands fa-instagram fa-2x"></i>  
     </section>
-
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Christine Lin</a>.
-    </p>
 </footer>
+
+<p class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Christine Lin</a>.
+</p>
 <!-- FOOTER -->
 
 </body>
